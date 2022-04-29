@@ -43,11 +43,18 @@
   padding: 0 100px;
 }
 .timer_module {
-  max-width: 500px;
+  max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  padding: 50px 0 0 0;
+}
+.timer_module__date {
+  width: 50%;
   display: grid;
-  padding: 70px 0 0 0;
-  position: relative;
+}
+.timer_module__timer {
+  width: 50%;
+  padding: 0 20px;
 }
 .timer_module .title {
   text-align: center;
@@ -73,9 +80,6 @@
 }
 .timer_module__text {
   margin: 25px auto;
-}
-.timer_module__date {
-  display: contents;
 }
 .timer_module__timer .timer {
   margin-top: 25px;
@@ -105,4 +109,15 @@
 }
 .timer__block_days_4s {
   width: 155px;
+}
+@media (max-width: 900px) {
+  .timer_module {
+    display: block;
+  }
+  .timer_module__date {
+    width: 100%;
+  }
+  .timer_module__timer {
+    width: 100%;
+  }
 }
